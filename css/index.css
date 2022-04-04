@@ -57,6 +57,11 @@
   display: flex;
   height: 2.5rem;
   border-radius: 0.5rem;
+  box-shadow:
+    0 0 0.5rem var(--primary-theme-color),
+    0 0 1rem var(--primary-theme-color),
+    0 0 1.5rem var(--primary-theme-color),
+    0 0 2rem var(--primary-theme-color);
   overflow: hidden;
 }
 
@@ -68,6 +73,12 @@
 
 .nav__menu-icon {
   font-size: 1.5rem;
+  color: var(--text-color);
+  text-shadow:
+    0 0 0.5rem var(--primary-theme-color),
+    0 0 1rem var(--primary-theme-color),
+    0 0 1.5rem var(--primary-theme-color),
+    0 0 2rem var(--primary-theme-color);
   cursor: pointer;
 }
 
@@ -163,6 +174,11 @@
   cursor: pointer;
   padding: 0.5rem 1rem;
   text-decoration: none;
+  box-shadow:
+    0 0 0.5rem var(--primary-theme-color),
+    0 0 1rem var(--primary-theme-color),
+    0 0 1.5rem var(--primary-theme-color),
+    0 0 2rem var(--primary-theme-color);
   transition: all 0.5s;
 }
 
@@ -286,11 +302,12 @@
 .footer-nav__link {
   display: flex;
   width: 1.5rem;
+  filter: brightness(150%);
   transition: all 0.25s;
 }
 
 .footer-nav__link:hover {
-  filter: brightness(150%);
+  filter: brightness(175%);
   transform: scale(1.5);
 }
 
@@ -304,6 +321,11 @@
   margin: 0;
   padding-top: 0.5rem;
   box-shadow: 0 -0.25rem 0.25rem -0.25rem var(--shadow-color);
+  text-shadow:
+  0 0 0.5rem var(--primary-theme-color),
+  0 0 1rem var(--primary-theme-color),
+  0 0 1.5rem var(--primary-theme-color),
+  0 0 2rem var(--primary-theme-color);
   transition: all 0.25s;
 }
 
