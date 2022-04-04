@@ -1,15 +1,142 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Animes Modal RWD CSS</title>
+  <title>Landing Page</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" />
+  <link rel="stylesheet" href="./css/index.css" />
+  <link rel="shortcut icon"
+    href="https://p4.wallpaperbetter.com/wallpaper/762/909/300/fullmetal-alchemist-fullmetal-alchemist-wallpaper-preview.jpg"
+    type="image/x-icon">
 </head>
 
-<body>
-  <h1>Animes Modal RWD CSS</h1>
+<head>
+  <link rel="stylesheet" type="text/css“ href=“style.css">
+</head>
+
+
+<body class="body">
+  <header class="header">
+    <nav class="nav">
+      <a href="#cover" class="nav__logo-container">
+        <img
+          src="https://p4.wallpaperbetter.com/wallpaper/577/414/559/full-metal-alchemist-fullmetal-alchemist-brotherhood-symbols-wallpaper-preview.jpg"
+          alt="Logo" class="nav__logo">
+      </a>
+
+      <label for="menu" class="nav__menu-icon">
+        <i class="fas fa-bars"></i>
+      </label>
+
+      <input type="checkbox" name="menu" id="menu" class="nav__menu-checkbox">
+
+      <ul class="nav__menu-list">
+        <li class="nav__menu-item">
+          <a href="#about" class="nav__menu-link">About</a>
+        </li>
+        <li class="nav__menu-item">
+          <a href="#services" class="nav__menu-link">Services</a>
+        </li>
+        <li class="nav__menu-item">
+          <a href="#briefcase" class="nav__menu-link">Briefcase</a>
+        </li>
+        <li class="nav__menu-item">
+          <a href="#contact" class="nav__menu-link">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="cover" id="cover">
+      <div class="cover-container">
+        <h2 class="cover__subtitle">Los hermanos Edward y Alphonse Elric continúan la búsqueda de la Piedra Filosofal
+          con la esperanza de restaurar sus cuerpos, que se perdieron cuando intentaron utilizar sus habilidades en
+          alquimia al tratar de resucitar a su madre fallecida.</h2>
+        <h1 class="cover__title">Fullmetal Alchemist</h1>
+        <div class="cover__button-container">
+          <a href="#about" class="cover__button">Ver ahora</a>
+          <a href="#modal" class="cover__button cover__button--active">Conocer más</a>
+        </div>
+      </div>
+    </section>
+    <section class="cover" id="about">About</section>
+    <section class="cover" id="services">Services</section>
+    <section class="cover" id="briefcase">Briefcase</section>
+    <section class="cover" id="contact">Contact</section>
+
+    <section class="modal" id="modal">
+      <div class="modal-container">
+        <figure class="modal__image-container">
+          <img
+            src="https://wallpapermemory.com/uploads/331/fullmetal-alchemist-fma-background-1366x768-laptop-310554.jpg"
+            alt="Imagen de modal" class="modal__image" />
+        </figure>
+        <h2 class="modal__title">Fullmetal Alchemist</h2>
+        <h3 class="cover__subtitle">Shōnen</h3>
+        <p class="modal__paragraph">Fullmetal Alchemist, también conocida como Full Metal Alchemist, FMA o Hagaren,
+          abreviatura en japonés es una serie de manga escrita e ilustrada por Hiromu Arakawa. Su primera adaptación al
+          anime fue dirigida por Seiji Mizushima y la segunda por Yasuhiro Irie.</p>
+        <a href="#cover" class="modal__button">¡Entendido!</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <nav class="footer-nav">
+      <div class="footer-nav-container">
+        <ul class="footer-nav__link-list">
+          <li class="footer-nav__link-item">
+            <a href="https://www.linkedin.com/in/elliotgaramendi/" class="footer-nav__link">
+              <img src="https://i.postimg.cc/J7BLFtdc/linkedin.png" alt="LinkedIn" class="footer-nav__link-image" />
+            </a>
+          </li>
+          <li class="footer-nav__link-item">
+            <a href="https://www.instagram.com/elliotgaramendi/" class="footer-nav__link">
+              <img src="https://i.postimg.cc/sfJtqS4W/instagram.png" alt="Instagram" class="footer-nav__link-image" />
+            </a>
+          </li>
+          <li class="footer-nav__link-item">
+            <a href="https://www.facebook.com/elliotgaramendi" class="footer-nav__link">
+              <img src="https://i.postimg.cc/7YHyZXZX/facebook.png" alt="Facebook" class="footer-nav__link-image" />
+            </a>
+          </li>
+          <li class="footer-nav__link-item">
+            <a href="https://github.com/ElliotXLeo" class="footer-nav__link">
+              <img src="https://i.postimg.cc/5NBMxTJX/github.png" alt="GitHub" class="footer-nav__link-image" />
+            </a>
+          </li>
+          <li class="footer-nav__link-item">
+            <a href="https://www.youtube.com/channel/UCE9whBrtYnLWrpzwk6z_JUA" class="footer-nav__link">
+              <img src="https://i.postimg.cc/dtPYcvbM/youtube.png" alt="YouTube" class="footer-nav__link-image" />
+            </a>
+          </li>
+          <li class="footer-nav__link-item">
+            <a href="https://nextjs-react-portafolio-fc.vercel.app" class="footer-nav__link">
+              <img src="https://i.postimg.cc/65TVxg9t/world-globe.png" alt="Página Personal"
+                class="footer-nav__link-image" />
+            </a>
+          </li>
+        </ul>
+        <h2 class="footer-nav__credits">
+          🦄Copyright &copy; 2022
+          <a href="#perfil" class="footer-nav__credits-author">Elliot Garamendi.
+          </a>
+          Todos los derechos reservados.🦄
+        </h2>
+      </div>
+    </nav>
+  </footer>
+
+  <script src="https://kit.fontawesome.com/f53c7bdc7c.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
